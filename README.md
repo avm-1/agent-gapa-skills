@@ -5,13 +5,13 @@
 </p>
 
 <p align="center">
-  <a href="#русский">Русский</a> • <a href="#english">English</a>
+  <a href="#русский">🇷🇺</a> • <a href="#english">🇬🇧</a>
 </p>
 
 ---
 
 <a name="русский"></a>
-## 🇷🇺 Русский
+## 🇷🇺
 
 **Agent GAPA Skills** — это набор самообучающихся агентских навыков, направленных на итеративное улучшение работы ИИ-агентов, запоминание ошибок и их предотвращение при работе с кодом и инфраструктурой.
 
@@ -57,7 +57,7 @@ AGENTS.md                        # Конвенции для агентов
 ---
 
 <a name="english"></a>
-## 🇬🇧 English
+## 🇬🇧
 
 **Agent GAPA Skills** is a collection of self-learning agent skills focused on iterative improvement of AI agents, remembering mistakes, and preventing them when working with code and infrastructure.
 
