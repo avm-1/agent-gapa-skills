@@ -15,6 +15,13 @@
 
 **Agent GAPA Skills** — это набор самообучающихся агентских навыков, направленных на итеративное улучшение работы ИИ-агентов, запоминание ошибок и их предотвращение при работе с кодом и инфраструктурой.
 
+### Быстрый старт
+
+```bash
+git clone https://github.com/avm-1/agent-gapa-skills.git
+cd agent-gapa-skills
+```
+
 ### Философия
 
 > Каждая ошибка — это данные. Каждый успех — это алгоритм.
@@ -60,6 +67,13 @@ AGENTS.md                        # Конвенции для агентов
 ## 🇬🇧
 
 **Agent GAPA Skills** is a collection of self-learning agent skills focused on iterative improvement of AI agents, remembering mistakes, and preventing them when working with code and infrastructure.
+
+### Quick Start
+
+```bash
+git clone https://github.com/avm-1/agent-gapa-skills.git
+cd agent-gapa-skills
+```
 
 ### Philosophy
 
