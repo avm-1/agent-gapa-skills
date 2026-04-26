@@ -57,6 +57,15 @@ AGENTS.md                        # Конвенции для агентов
 |-------|----------|
 | `gapa-self-learning` | Рефлексия, извлечение алгоритмов, запись антипаттернов |
 
+### Эксперимент: ловушка на коде 1С
+
+Мы провели стресс-тест: один и тот же модуль 1С с 5 намеренно внесёнными багами анализировали два агента — с навыками (`plan-validator` + `tool-enforcer`) и без.
+
+**Результат**: агент с навыками нашёл **10 проблем**, агент без — **7** (+43%).  
+При этом агент с навыками выявил глубинные архитектурные риски (race condition, UX-ловушки, граничные условия), которые агент без навыков пропустил.
+
+Подробный отчёт: [`experiment/1c-trap/REPORT.md`](experiment/1c-trap/REPORT.md)
+
 ### Контрибуция
 
 Проект открыт для экспериментов. Если у тебя есть идея для нового skill или улучшения системы рефлексии — welcome!
@@ -109,6 +118,15 @@ AGENTS.md                        # Agent conventions
 | Skill | Description |
 |-------|-------------|
 | `gapa-self-learning` | Reflection, algorithm extraction, anti-pattern logging |
+
+### Experiment: 1C Code Trap
+
+We ran a stress test: two agents analyzed the same 1C module with 5 intentional bugs — one with skills (`plan-validator` + `tool-enforcer`), one without.
+
+**Result**: the agent with skills found **10 issues**, the agent without — **7** (+43%).  
+The skilled agent also uncovered deep architectural risks (race conditions, UX traps, edge cases) that the unskilled agent missed.
+
+Full report: [`experiment/1c-trap/REPORT.md`](experiment/1c-trap/REPORT.md)
 
 ### Contributing
 
