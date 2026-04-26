@@ -63,7 +63,7 @@ AGENTS.md                        # Конвенции для агентов
 
 Мы провели стресс-тест: один и тот же модуль 1С с 5 намеренно внесёнными багами анализировали два агента — с навыками (`plan-validator` + `tool-enforcer`) и без.
 
-**Результат**: агент с навыками нашёл **10 проблем**, агент без — **8** (+25%).  
+**Результат**: агент с навыками нашёл **10 проблем**, агент без — **8**.  
 При этом агент с навыками выявил архитектурные риски (отсутствие проверок входных данных, обработка исключений), которые агент без навыков пропустил.
 
 Подробный отчёт: [`experiment/1c-trap/REPORT.md`](experiment/1c-trap/REPORT.md)
@@ -139,7 +139,7 @@ AGENTS.md                        # Agent conventions
 
 We ran a stress test: two agents analyzed the same 1C module with 5 intentional bugs — one with skills (`plan-validator` + `tool-enforcer`), one without.
 
-**Result**: the agent with skills found **10 issues**, the agent without — **8** (+25%).  
+**Result**: the agent with skills found **10 issues**, the agent without — **8**.  
 The skilled agent also uncovered architectural risks (missing input validation, exception handling) that the unskilled agent missed.
 
 Full report: [`experiment/1c-trap/REPORT.md`](experiment/1c-trap/REPORT.md)
