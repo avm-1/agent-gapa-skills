@@ -57,7 +57,9 @@ AGENTS.md                        # Конвенции для агентов
 |-------|----------|
 | `gapa-self-learning` | Рефлексия, извлечение алгоритмов, запись антипаттернов |
 
-### Эксперимент: ловушка на коде 1С
+### Эксперименты
+
+#### 1. Ловушка на коде 1С (Performance)
 
 Мы провели стресс-тест: один и тот же модуль 1С с 5 намеренно внесёнными багами анализировали два агента — с навыками (`plan-validator` + `tool-enforcer`) и без.
 
@@ -65,6 +67,18 @@ AGENTS.md                        # Конвенции для агентов
 При этом агент с навыками выявил архитектурные риски (отсутствие проверок входных данных, обработка исключений), которые агент без навыков пропустил.
 
 Подробный отчёт: [`experiment/1c-trap/REPORT.md`](experiment/1c-trap/REPORT.md)
+
+#### 2. Adaptation (Самообучение)
+
+Проверили, может ли агент записать успешный паттерн в память и применить его в будущей задаче.
+
+**Результат**:
+- Агент **без чтения памяти**: `wc -l` → **2** (ошибка на файле без `\n` в конце)
+- Агент **с чтением MEMORY.md**: `awk 'END {print NR}'` → **3** (корректно)
+
+**Вывод**: adaptation работает, но требует явной подгрузки памяти в контекст.
+
+Подробный отчёт: [`experiment/adaptation-test/REPORT.md`](experiment/adaptation-test/REPORT.md)
 
 ### Контрибуция
 
@@ -119,7 +133,9 @@ AGENTS.md                        # Agent conventions
 |-------|-------------|
 | `gapa-self-learning` | Reflection, algorithm extraction, anti-pattern logging |
 
-### Experiment: 1C Code Trap
+### Experiments
+
+#### 1. 1C Code Trap (Performance)
 
 We ran a stress test: two agents analyzed the same 1C module with 5 intentional bugs — one with skills (`plan-validator` + `tool-enforcer`), one without.
 
@@ -127,6 +143,18 @@ We ran a stress test: two agents analyzed the same 1C module with 5 intentional 
 The skilled agent also uncovered architectural risks (missing input validation, exception handling) that the unskilled agent missed.
 
 Full report: [`experiment/1c-trap/REPORT.md`](experiment/1c-trap/REPORT.md)
+
+#### 2. Adaptation (Self-Learning)
+
+We tested whether an agent can record a successful pattern to memory and apply it in a future similar task.
+
+**Result**:
+- Agent **without reading memory**: `wc -l` → **2** (error on file without trailing `\n`)
+- Agent **with MEMORY.md**: `awk 'END {print NR}'` → **3** (correct)
+
+**Conclusion**: adaptation works, but requires explicit memory loading into context.
+
+Full report: [`experiment/adaptation-test/REPORT.md`](experiment/adaptation-test/REPORT.md)
 
 ### Contributing
 
