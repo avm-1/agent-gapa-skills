@@ -1,0 +1,4 @@
+app.log: 2
+debug.log: 0
+error.log: 3
+Total: 5

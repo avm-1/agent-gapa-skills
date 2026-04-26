@@ -1,0 +1,5 @@
+Sales Report
+====================
+Files processed: 3
+Total sales: 1650
+Status: VERIFIED

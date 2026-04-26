@@ -1,0 +1,13 @@
+{
+  "project_name": "agent-gapa-skills",
+  "version": "1.0.0",
+  "features": [
+    "self-learning",
+    "reflection",
+    "anti-pattern-logging"
+  ],
+  "repository": {
+    "url": "https://github.com/avm-1/agent-gapa-skills",
+    "branch": "main"
+  }
+}

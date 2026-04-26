@@ -1,0 +1,5 @@
+Sales Report Q1-Q3
+====================
+Files processed: 3
+Total sales: 1650
+Status: VERIFIED
